@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Just Search</title>
-    <!-- Adicione este estilo para garantir que o contêiner de partículas ocupe toda a tela -->
+    <title>Olimpíadas</title>
+    <!-- Estilo para garantir que o contêiner de partículas ocupe toda a tela -->
     <style>
         #particles-js {
             position: fixed;
@@ -25,21 +25,20 @@
     <div id="particles-js"></div>
 
     <header>
-        <!-- Barra de Pesquisa do Google no Topo -->
+        <h1>Just Search</h1>
+        <h3>Barra de pesquisa google</h3>
         <div class="google-search-top">
             <div class="gcse-search"></div>
             <p>Quer algo que não tem em nosso site? Pesquise aqui!</p>
         </div>
-
-        <h1>Just Search</h1>
-    </header>
     
+    </header>
+
     <main>
         <section>
             <input type="text" placeholder="Digite o nome do atleta">
             <button>Pesquisar</button>
         </section>
-        
         <section class="resultados-pesquisa">
             <div class="item-resultado">
                 <h2>
@@ -48,7 +47,6 @@
                 <p class="descricao-meta">Rebeca Andrade é uma das maiores ginastas brasileiras de todos os tempos. Com sua força, elegância e determinação, ela conquistou o coração dos brasileiros e se tornou um verdadeiro ícone do esporte nacional.</p>
                 <a href="https://pt.wikipedia.org/wiki/Rebeca_Andrade" target="_blank">Mais informações</a>
             </div>
-            
             <div class="item-resultado">
                 <h2>
                     <a href="#" target="_blank">Rayssa Leal</a>
@@ -56,7 +54,7 @@
                 <p class="descricao-meta">Rayssa Leal, a Fadinha, é uma skatista brasileira que conquistou o mundo com seu talento e carisma. Aos poucos anos, ela já coleciona títulos e inspira milhões de jovens.</p>
                 <a href="https://pt.wikipedia.org/wiki/Rayssa_Leal" target="_blank">Mais informações</a>
             </div>
-            
+
             <div class="item-resultado">
                 <h2>
                     <a href="#" target="_blank">Beatriz Souza</a>
@@ -64,125 +62,126 @@
                 <p class="descricao-meta">Beatriz Souza é uma judoca brasileira que se destacou nos Jogos Olímpicos, trazendo orgulho para o país. Sua força e técnica a colocaram entre as melhores do mundo.</p>
                 <a href="https://pt.wikipedia.org/wiki/Beatriz_Souza" target="_blank">Mais informações</a>
             </div>
+
         </section>
     </main>
-    
+
     <footer>
         <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: guilherme@atletas.com.br</p>
     </footer>
-    
+
     <!-- Script do Google Custom Search -->
     <script async src="https://cse.google.com/cse.js?cx=f328282ebf88a4e22"></script>
     
     <!-- Script das partículas -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-    particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 120,  // Aumenta o número de partículas
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#ffffff"  // Você pode alterar para uma cor mais chamativa, como #ff0000 (vermelho)
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                }
-            },
-            "opacity": {
-                "value": 0.8,  // Aumenta a opacidade das partículas
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.3,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 5,  // Aumenta o tamanho das partículas
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#ffffff",
-                "opacity": 0.6,  // Aumenta a opacidade das linhas que conectam as partículas
-                "width": 2  // Aumenta a espessura das linhas
-            },
-            "move": {
-                "enable": true,
-                "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 400,
-                    "line_linked": {
-                        "opacity": 1
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 120,  // Aumenta o número de partículas
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
                     }
                 },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
+                "color": {
+                    "value": "#ffffff"  // Cor das partículas
                 },
-                "repulse": {
-                    "distance": 200
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
                 },
-                "push": {
-                    "particles_nb": 4
+                "opacity": {
+                    "value": 0.8,  // Opacidade das partículas
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.3,
+                        "sync": false
+                    }
                 },
-                "remove": {
-                    "particles_nb": 2
+                "size": {
+                    "value": 5,  // Tamanho das partículas
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.6,  // Opacidade das linhas
+                    "width": 2  // Espessura das linhas
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
                 }
-            }
-        },
-        "retina_detect": true
-    });
-      </script>
-    
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
 
